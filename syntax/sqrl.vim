@@ -13,6 +13,8 @@ endif
 
 syn keyword sqrlFunction rateLimited patternMatches hasLabel
 syn keyword sqrlFunction count countUnique
+syn keyword sqrlFunction length
+syn keyword sqrlFunction relationsWithLabel
 
 " Case insensitive matches below
 syn case ignore
