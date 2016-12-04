@@ -20,18 +20,18 @@ syn keyword sqrlFunction relationsWithLabel
 syn case ignore
 
 " Keywords:
-syn match sqrlStatement "^\s*CREATE\s\+RULE\s\+"
-syn match sqrlStatement "^\s*WHEN\s\+RULES*\s\+"
+syn match sqrlStatement "\v^\s*CREATE\s+RULE\s+"
+syn match sqrlStatement "\v^\s*WHEN\s+RULES*(\s|$)"
 syn match sqrlStatement "\v(^|\s)WITH\s+REASON\s+"
 syn match sqrlStatement "\v(^|\s)ROLLOUT\s+TO\s+"
-syn match sqrlStatement "\v(^|\s)MANUAL\s\+ADD\s+"
+syn match sqrlStatement "\v(^|\s)MANUAL\s+ADD\s+"
 syn match sqrlStatement "\v(^|\s)MANUAL\s+REMOVE\s+"
 syn match sqrlStatement "\v(^|\s)GROUP\s+BY\s+"
 syn match sqrlStatement "\v(^|\s)PENDING"
 syn keyword sqrlStatement let
-syn keyword sqrlStatement where and or in by contains
+syn keyword sqrlStatement where and or not in by contains
 syn keyword sqrlStatement block whitelist
-syn keyword sqrlStatement add to
+syn keyword sqrlStatement add remove to from
 syn keyword sqrlStatement last
 syn keyword sqrlStatement month months
 syn keyword sqrlStatement week weeks
